@@ -1,0 +1,16 @@
+虚拟机的IP（电脑必须连接网路才可以）
+mkdir a 创建文件夹
+mkdir -p a/b/c 创建多级文件夹
+touch 123.json 创建文件
+rm 123.json 删除文件
+rm -rf a 删除文件夹
+ll |grep abc 在当前文件夹中筛选出来文件名中含有abc的文件
+cat 123.json 查看文件（一整页显示）
+more 123.json 查看文件（分页显示）
+vim 123.json 编辑文件（执行完vim后，按i键开始编辑，编辑结束按Esc退出编辑，按:号输入wq回车保存。）
+date 查看时间
+history 查看输入的历史
+find / -name 123 在根目录下查找名字为123的文件及文件夹，可以支持*模糊匹配。
+cp 123.json a 复制文件123.json到文件夹a下
+cp -R a b 复制文件夹a到文件夹下b（递归复制）
+

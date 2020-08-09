@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.ProductMapper">
+    <resultMap id="Base" type="com.domain.Product">
+        <id column="pid" jdbcType="INTEGER" property="pid"/>
+        <result column="productName" jdbcType="VARCHAR" property="productName"/>
+        <result column="dbsource" jdbcType="VARCHAR" property="dbsource"/>
+    </resultMap>
+    <sql id="Base_Column">
+		pid,productName,dbsource
+	</sql>
+    <select id="findById" resultMap="Base" parameterType="Integer">
+        select
+        <include refid="Base_Column"/>
+        from product where pid=#{pid};
+    </select>
+    <select id="findAll" resultMap="Base">
+        select
+        <include refid="Base_Column"/>
+        from product;
+    </select>
+    <insert id="addProduct" parameterType="Product">
+		INSERT INTO product(productName, dbsource) VALUES(#{productName},
+		#{dbsource});
+	</insert>
+</mapper>

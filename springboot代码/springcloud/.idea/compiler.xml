@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="eureka-server-6001" />
+        <module name="eureka-server-6002" />
+        <module name="microservice-cloud-02-api" />
+        <module name="microservice-cloud-03-provider-product-8001" />
+        <module name="microservice-cloud-03-provider-product-8002" />
+        <module name="microservice-cloud-03-provider-product-hystrix-8001" />
+        <module name="microservice-cloud-04-consumer-product-80" />
+        <module name="microservice-cloud-04-consumer-product-feign" />
+        <module name="microservice-cloud-04-consumer-product-feign-80" />
+        <module name="microservice-cloud-05-hystrix-dashboard-9001" />
+        <module name="microservice-cloud-06-zuul-gateway-7001" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="eureka-server-6001" target="1.8" />
+      <module name="eureka-server-6002" target="1.8" />
+      <module name="microservice-cloud-01" target="1.8" />
+      <module name="microservice-cloud-02-api" target="1.8" />
+      <module name="microservice-cloud-03-provider-product-8001" target="1.8" />
+      <module name="microservice-cloud-03-provider-product-8002" target="1.8" />
+      <module name="microservice-cloud-03-provider-product-hystrix-8001" target="1.8" />
+      <module name="microservice-cloud-04-consumer-product-80" target="1.8" />
+      <module name="microservice-cloud-04-consumer-product-feign" target="1.8" />
+      <module name="microservice-cloud-04-consumer-product-feign-80" target="1.8" />
+      <module name="microservice-cloud-05-hystrix-dashboard-9001" target="1.8" />
+      <module name="microservice-cloud-06-zuul-gateway-7001" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

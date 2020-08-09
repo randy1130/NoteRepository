@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/microservice-cloud-01" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservice-cloud-01/eureka-server-6001" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservice-cloud-01/eureka-server-6002" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservice-cloud-01/microservice-cloud-02-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservice-cloud-01/microservice-cloud-03-provider-product-8001" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservice-cloud-01/microservice-cloud-03-provider-product-8002" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservice-cloud-01/microservice-cloud-03-provider-product-hystrix-8001" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservice-cloud-01/microservice-cloud-04-consumer-product-80" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservice-cloud-01/microservice-cloud-04-consumer-product-feign-80" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservice-cloud-01/microservice-cloud-05-hystrix-dashboard-9001" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservice-cloud-01/microservice-cloud-06-zuul-gateway-7001" charset="UTF-8" />
+  </component>
+</project>
