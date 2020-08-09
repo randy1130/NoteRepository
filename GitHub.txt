@@ -1,3 +1,4 @@
+第一次在GitHub上上传文件
 1、在GitHub上创建一个Repository。
 2、新建完成之后，接下来就是生成SSH密钥部分。
  A、鼠标右击Git Bash，输入以下命令：
@@ -9,3 +10,11 @@
  B、在文件夹下找公匙c/Users/Administrator/.ssh/id_rsa.pub，
     里面是生成的SSH密钥，复制此密钥，到GitHub的settings配置密匙。
  C、接下来在你要上传的目录上右键，点击 Git Bash Here 新打开一个窗口。
+    git init
+	git add .
+	git commit -m "你的说明注释"
+ D、复制创建的远程仓库地址
+    git remote add origin 你的仓库地址
+	git pull --rebase origin master
+	git push -u origin master
+	输入账号和密码
