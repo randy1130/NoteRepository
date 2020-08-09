@@ -18,3 +18,15 @@
 	git pull --rebase origin master
 	git push -u origin master
 	输入账号和密码
+	
+更新GitHub上的文件
+
+1.在需要更新的文件上右击Git Bash
+   git add *
+   git commit -m "更新说明"
+   git pull   
+   git push origin master
+   
+拉取GitHub上的文件
+
+  git clone +仓库地址
