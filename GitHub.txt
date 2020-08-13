@@ -30,3 +30,8 @@
 拉取GitHub上的文件
 
   git clone +仓库地址
+  
+撤销上传到本地仓的代码
+  git log
+复制id
+  git reset --hard +id
