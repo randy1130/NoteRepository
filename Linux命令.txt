@@ -13,4 +13,7 @@ history 查看输入的历史
 find / -name 123 在根目录下查找名字为123的文件及文件夹，可以支持*模糊匹配。
 cp 123.json a 复制文件123.json到文件夹a下
 cp -R a b 复制文件夹a到文件夹下b（递归复制）
+chmod -R 777 lyy 递归将文件lyy权限改为777
+chmod -R ugo-w lyy 递归将文件lyy的属主、属组、其他的写权限去掉
+chown root:webserver lyy 将文件lyy的属主改为root属组改为webserver
 
