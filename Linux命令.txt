@@ -11,9 +11,25 @@ vim 123.json 编辑文件（执行完vim后，按i键开始编辑，编辑结束
 date 查看时间
 history 查看输入的历史
 find / -name 123 在根目录下查找名字为123的文件及文件夹，可以支持*模糊匹配。
+find / type f -name *.json 查找特定的文件类型
+find / -user root 查找根目录下属主为root的文件
 cp 123.json a 复制文件123.json到文件夹a下
 cp -R a b 复制文件夹a到文件夹下b（递归复制）
 chmod -R 777 lyy 递归将文件lyy权限改为777
 chmod -R ugo-w lyy 递归将文件lyy的属主、属组、其他的写权限去掉
 chown root:webserver lyy 将文件lyy的属主改为root属组改为webserver
+netstart -ntlp 查看此端口是否使用
+/关键字 可以在文件中搜索关键字 按N下一个，shift+N 上一个
+set nu 可以见文件的行数
+du -sh 文件名 查看占用的内存大小
+./ 表示当前目录 ../ 表示上层目录 / 根目录
+tar zxvf 压缩文件名.tar.gz 解压文件
+tar zcvf 压缩文件名.tar.gz 待压缩的文件名  压缩文件
+scp -r omc@189.106.31.78:/home/omc/lyy /home/omc/ 跨服务器复制文件（在需要复制的环境输入这个）
+远程调试
+1.环境配置
+ a.在tomcat的bin/catalina.sh 文件中第270行加上下面这句
+ JAVA_OPTS="$JAVA_OPTS-Xdebug -Xrunjdwp:transport=dt_socket,address=50050,server=y,suspend=n"
 
+2.IDEA配置
+ a.Remote 50050

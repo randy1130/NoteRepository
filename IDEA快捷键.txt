@@ -1,0 +1,33 @@
+IDEA快捷键
+
+Alt+F7 查看调用此方法的方法
+Ctrl+Alt+<- 返回上一个调用方法的地方
+Ctrl+Alt+L 格式刷
+Ctrl+Alt+S 设置
+Ctrl+K commit代码
+Alt+7 或者 Ctrl+F12 查看一个类中所有方法
+Ctrl+Alt+B 查看一个接口的所有实现类
+Ctrl+H 查看一个类的继承关系
+选中代码右击->refactor->Extract->Method 代码重构(抽方法)
+Shift+F6 改变文件夹名称
+Ctrl+R 文本替换
+Ctrl+G 跳行
+Ctrl+Shift+U 转换大小写
+Shift+F6 批量修改变量名
+Ctrl+Shift+箭头 移动一行代码
+右击文件->show in Explorer 打开文件在电脑上的位置
+Ctrl+P 查看方法的参数
+Ctrl+Shift+N 或者 双击Shift键 搜索一个类
+IDEA中的Git回退（可以回退远程和本地的代码，但是会有push的记录）
+1.git->Show History -> 复制新老版本号
+2.git->Repository -> Reset Hard -> Reset Type : 选Hard ，To Commit ：old Version(老版本号) -> Reset
+3.git->Repository -> Reset Hard -> Reset Type : 选Mixed ，To Commit ：new Version(新版本号) -> Reset
+4.commit
+5.push
+
+笔记：
+
+读取文件的路径（从src往下就可以按照工程的路径自定义了）：
+String path=Demo.class.getResource("/").getPath()+"../../src/";
+
+
