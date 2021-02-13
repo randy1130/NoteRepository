@@ -1,5 +1,6 @@
 package com.sxt;
 
+import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
@@ -34,6 +35,24 @@ public class Main {
             bf.append(field.getName());
             bf.append(";\n");
         }
+        // 循环构造方法
+        Constructor<?>[] constructors = userClass.getDeclaredConstructors();
+        for (Constructor constructor : constructors) {
+            bf.append("\t");
+            bf.append(Modifier.toString(constructor.getModifiers()));
+            bf.append(" ");
+            bf.append(userClass.getSimpleName());
+            bf.append("(");
+            Class[] parameterTypes = constructor.getParameterTypes();
+            for (Class parameterType : parameterTypes) {
+                bf.append(parameterType.getSimpleName());
+                bf.append(",");
+            }
+            if (parameterTypes.length > 0) {
+                bf.deleteCharAt(bf.length() - 1);
+            }
+            bf.append("){}\n");
+        }
         // 循环方法
         Method[] methods = userClass.getDeclaredMethods();
         for (Method method : methods) {
@@ -47,9 +66,12 @@ public class Main {
             Class<?>[] parameterTypes = method.getParameterTypes();
             for (Class parameterType : parameterTypes) {
                 bf.append(parameterType.getSimpleName());
-                bf.append(" ");
+                bf.append(",");
             }
-            bf.append(" ){}\n");
+            if (parameterTypes.length > 0) {
+                bf.deleteCharAt(bf.length() - 1); // 删除指定下标的一个字符（删除最后一个丢逗号）
+            }
+            bf.append("){}\n");
         }
 
         bf.append("}");
