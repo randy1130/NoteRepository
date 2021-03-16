@@ -24,6 +24,12 @@ IDEA中的Git回退（可以回退远程和本地的代码，但是会有push的
 3.git->Repository -> Reset Hard -> Reset Type : 选Mixed ，To Commit ：new Version(新版本号) -> Reset
 4.commit
 5.push
+按某一个版本拉分支
+1.git->Show History
+2.在想回退的版本上右击->select in git log ->继续右击-> new branch->输入新的分支名
+3.push到远端生成远程分支
+（删除分支）
+4.选择别的分支检出，然后选择新建的分支右击delete->delete Tracked branch ->delete
 
 笔记：
 
