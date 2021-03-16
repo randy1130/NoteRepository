@@ -26,6 +26,10 @@ du -sh 文件名 查看占用的内存大小
 tar zxvf 压缩文件名.tar.gz 解压文件
 tar zcvf 压缩文件名.tar.gz 待压缩的文件名  压缩文件
 scp -r omc@189.106.31.78:/home/omc/lyy /home/omc/ 跨服务器复制文件（在需要复制的环境输入这个）
+cat runlog.log | grep -i 关键字 过滤日志中的关键字
+netstat -ntlp 查看当前所有的tcp端口
+netstat -ntulp | grep 80 查看所有的80端口使用情况
+lsof -i:8080 查看8080端口占用
 远程调试
 1.环境配置
  a.在tomcat的bin/catalina.sh 文件中第270行加上下面这句
